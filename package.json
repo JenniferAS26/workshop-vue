@@ -1,0 +1,23 @@
+{
+  "name": "workshop-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenniferAS26/workshop-vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenniferAS26/workshop-vue/issues"
+  },
+  "homepage": "https://github.com/JenniferAS26/workshop-vue#readme",
+  "dependencies": {
+    "sass": "^1.69.4"
+  }
+}

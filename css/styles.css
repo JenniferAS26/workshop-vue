@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/* Colors */
+/* Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F8F9FA;
+}
+
+#myApp {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 125px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.card__logo-container {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.card__offer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+}
+.card__offer .role {
+  font-size: 2.4rem;
+}
+.card__offer .skills-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.card__offer .skills-container__skill {
+  padding: 5px 10px;
+  border: 1px solid #1B1C1E;
+  border-radius: 20px;
+}
+.card__offer--top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.card__offer--bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__offer--bottom .categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.card__offer--bottom .categories span {
+  font-size: 1.4rem;
+}
+.card__offer--bottom .benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.card__offer--bottom .benefits span {
+  padding: 0 8px;
+  border: 1px solid #1B1C1E;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

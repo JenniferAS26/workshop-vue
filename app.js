@@ -12,7 +12,7 @@ const jobOffers = [
         },
         { 
           name: 'Horario flexible',
-          icon: '<img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/womens-watch.png" alt="womens-watch"/>'
+          icon: '<img width="15" height="15" src="https://img.icons8.com/ios-glyphs/30/womens-watch.png" alt="womens-watch"/>'
         },
         { 
           name: 'Trabajo remoto parcial',
@@ -96,7 +96,7 @@ const jobOffers = [
       },
       {
         name: 'Día completo o medio día libre en tu cumpleaños',
-        icon: '<img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/womens-watch.png" alt="womens-watch"/>'
+        icon: '<img width="15" height="15" src="https://img.icons8.com/ios-glyphs/30/womens-watch.png" alt="womens-watch"/>'
       }
     ],
     vacancies: '1',
@@ -154,7 +154,7 @@ const jobOffers = [
       },
       { 
         name: 'Horario flexible',
-        icon: '<img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/womens-watch.png" alt="womens-watch"/>'
+        icon: '<img width="15" height="15" src="https://img.icons8.com/ios-glyphs/30/womens-watch.png" alt="womens-watch"/>'
       },
       { 
         name: 'Celebración de días especiales',
@@ -203,7 +203,7 @@ const jobOffers = [
       },
       {
         name: 'Seguros',
-        icon: '<img width="32" height="32" src="https://img.icons8.com/windows/32/lock.png" alt="lock"/>'
+        icon: '<img width="15" height="15" src="https://img.icons8.com/windows/32/lock.png" alt="lock"/>'
       },
       {
         name: 'Fiesta de fin de año',

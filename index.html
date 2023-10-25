@@ -10,12 +10,14 @@
 <body>
   <div id="myApp">
     <div class="card" v-for="jobOffer in jobOffers">
-      <div class="card__logo-container"></div>
+      <div class="card__logo-container" v-html="jobOffer.companyLogo"></div>
       <div class="card__offer">
         <div class="card__offer--top">
           <h2 class="role">{{ jobOffer.role }}</h2>
           <div class="skills-container">
-            <span class="skills-container__skill">skill</span>
+            <span class="skills-container__skill" v-for="skill in jobOffer.softSkills">
+              <span v-html="skill">{{skill}}</span>
+            </span>
           </div>
         </div>
         <div class="card__offer--bottom">
@@ -40,9 +42,7 @@
             <span>{{ jobOffer.publishDate }}</span>
           </div>
           <div class="benefits">
-            <span><img width="15" height="15" src="https://img.icons8.com/ios-filled/50/cute-pumpkin.png" alt="cute-pumpkin"/></span>
-            <span><img width="15" height="15" src="https://img.icons8.com/ios-filled/50/cute-pumpkin.png" alt="cute-pumpkin"/></span>
-            <span><img width="15" height="15" src="https://img.icons8.com/ios-filled/50/cute-pumpkin.png" alt="cute-pumpkin"/></span>
+            <span v-for="icon in jobOffer.perks" v-html="icon.icon"></span>
           </div>
         </div>
       </div>

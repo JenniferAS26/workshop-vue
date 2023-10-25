@@ -9,13 +9,35 @@ html
   font-size: 62.5%
 
 body
-  width: 100%
+  width: 100vw
   height: 100%
   font-family: $font-source
   background-color: $bg-color
-
-#myApp
-  width: 100%
-  height: 100%
   display: grid
-  gap: 20px
+  grid-template-areas: "header header" "sidebar filters" "sidebar cards" 
+  grid-template-columns: 100px auto
+  grid-template-rows: 71px 110px auto
+  .header
+    grid-area: header
+  .navbar
+    grid-area: sidebar
+  .filter-container
+    grid-area: filters
+  #myApp
+    grid-area: cards
+    padding: 10px 20px
+    width: 100%
+    height: 100%
+    display: grid
+    gap: 20px
+  @media (min-width: 991px) 
+    grid-template-rows: 71px 71px auto
+
+li
+  list-style: none
+
+
+.mobile-nav
+  display: none !important
+  @media (min-width: 991px) 
+    display: flex !important

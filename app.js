@@ -21,7 +21,7 @@ const jobOffers = [
         { 
           name: 'Celebración de días especiales',
           icon: '<img width="15" height="15" src="https://img.icons8.com/android/24/cool.png" alt="cool"/>'
-        },
+        }
     ],
     vacancies: '1',
     publishDate: '1 day ago',

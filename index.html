@@ -6,13 +6,86 @@
   <title>Workshop Vue</title>
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
 </head>
 <body>
+  <header class="header">
+    <img class="header__logo" src="./images/logo.png" alt="PeakU logo">
+    <nav class="header__nav">
+      <ul class="header__nav--option-list mobile-nav">
+        <li>Empleos</li>
+        <li>Bootcamp</li>
+        <li>Sobre nosotros</li>
+        <li>Para profesionales</li>
+        <li>Para empresas </li>
+      </ul>
+      <button class="header__nav--translate mobile-nav">
+        <img width="15" height="15" src="https://img.icons8.com/material-outlined/24/globe--v1.png" alt="globe--v1"/>
+        Español
+      </button>
+      <div class="header__nav--user">
+        <img class="header__nav--notifications" width="32" height="32" src="https://img.icons8.com/windows/32/appointment-reminders--v1.png" alt="appointment-reminders--v1"/>
+        <div class="header__nav--user-info">
+          <img width="30" height="30" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/external-user-interface-kiranshastry-solid-kiranshastry.png" alt="external-user-interface-kiranshastry-solid-kiranshastry"/>
+          <div>
+            <span>Jennifer</span>
+            <span>4555</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <nav class="sidebar">
+    <ul class="sidebar__list-options">
+      <li class="sidebar__list-options--option">
+        <img width="25" height="25" src="https://img.icons8.com/sf-ultralight/25/briefcase.png" alt="briefcase"/>
+        Empleos
+      </li>
+      <li class="sidebar__list-options--option">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/document--v1.png" alt="document--v1"/>
+        Publicaciones
+      </li>
+      <li class="sidebar__list-options--option">
+        <img width="25" height="25" src="https://img.icons8.com/windows/32/controller.png" alt="controller"/>
+        Cursos
+      </li>
+      <li class="sidebar__list-options--option">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/chat-message--v1.png" alt="chat-message--v1"/>
+        Preguntas
+      </li>
+      <li class="sidebar__list-options--option">
+        <img width="24" height="24" src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/24/external-bracket-development-royyan-wijaya-detailed-outline-royyan-wijaya.png" alt="external-bracket-development-royyan-wijaya-detailed-outline-royyan-wijaya"/>
+        Bootcamp
+      </li>
+      <li class="sidebar__list-options--option">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/diamond--v1.png" alt="diamond--v1"/>
+        Premios
+      </li>
+      <li class="sidebar__list-options--option">
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/parse-from-clipboard.png" alt="parse-from-clipboard"/>
+        Tu CV
+      </li>
+    </ul>
+  </nav>
+  <section class="filter-container">
+    <form class="filter-container__form">
+      <button>
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/737373/search--v1.png" alt="search--v1"/>
+      </button>
+      <input type="text" placeholder="Buscar por cargo, salario, ubicación o empresa">
+    </form>
+    <div class="filter-container__filters">
+      <span>Area</span>
+      <span>Cargo</span>
+      <span>Salario</span>
+      <span>Ubicación</span>
+    </div>
+  </section>
   <div id="myApp">
-    <div class="card" v-for="jobOffer in jobOffers">
-      <div class="card__logo-container" v-html="jobOffer.companyLogo"></div>
-      <div class="card__offer">
-        <div class="card__offer--top">
+    <div class="card-offer" v-for="jobOffer in jobOffers">
+      <div class="card-offer__logo-container" v-html="jobOffer.companyLogo"></div>
+      <div class="card-offer__offer">
+        <div class="card-offer__offer--top">
           <h2 class="role">{{ jobOffer.role }}</h2>
           <div class="skills-container">
             <span class="skills-container__skill" v-for="skill in jobOffer.softSkills">
@@ -20,7 +93,7 @@
             </span>
           </div>
         </div>
-        <div class="card__offer--bottom">
+        <div class="card-offer__offer--bottom">
           <div class="categories company">
             <img width="15" height="15" src="https://img.icons8.com/ios/50/company--v1.png" alt="company--v1"/>
             <span>{{ jobOffer.company }}</span>

@@ -1,0 +1,42 @@
+@use './_variables' as *
+@use './_mixins' as *
+
+.header 
+  width: 100%
+  height: 71px
+  padding: 10px
+  @include flexCenter(row, space-between, center)
+  &__nav 
+    width: 70%
+    height: 100%
+    @include flexCenter(row, flex-end, center)
+    gap: 20px
+    &--option-list
+      width: 100%
+      height: 100%
+      @include flexCenter(row, space-between, center)
+      li
+        cursor: pointer
+        font-size: 1.4rem
+        font-weight: $semibold-weight
+        color: $primary-text-color
+        opacity: 0.6
+        &:hover
+          opacity: 1
+          
+    &--translate
+      width: 102px 
+      height: 31px
+      border: 1px solid #dee2e6
+      background-color: transparent
+      @include flexCenter(row, center, center)
+      gap: 5px
+      opacity: 0.6
+    &--user
+      @include flexCenter(row, flex-end, center)
+    &--user-info
+      width: 80px
+      height: 40px
+      @include flexCenter(row, space-between, center)
+    @media (min-width: 991px) 
+      justify-content: space-between

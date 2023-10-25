@@ -1,0 +1,40 @@
+@use './_variables' as *
+@use './_mixins' as *
+  
+.filter-container
+  width: 100%
+  height: 110px
+  background-color: $primary-color
+  display: grid
+  justify-items: center
+  align-items: center
+  align-content: center
+  gap: 10px
+  &__form
+    width: 100%
+    height: 40px
+    padding: 0 15px
+    @include flexCenter(row, center, center)
+    button
+      width: 40px
+      height: 40px
+      border: none
+      background-color: $bg-color
+    input
+      width: 450px
+      height: 40px
+      border: none
+      padding: 020px
+  &__filters
+    width: 100%
+    @include flexCenter(row, center, center)
+    gap: 15px
+    span
+      padding: 5px 15px
+      border: 1px solid #FFFFFF
+      border-radius: 20px
+      color: #FFFFFF
+      font-size: 1.4rem
+  @media (min-width: 991px)
+    height: 71px
+    @include flexCenter(row, center, center)
